@@ -149,11 +149,7 @@ public class CustomAdapterProceedToCart extends BaseAdapter {
         String message = "";
         int totalItemInCart = ProceedToCart.getCartItemTotalCount();
         double totalCartAmount = ProceedToCart.getCartItemTotalPrice();
-        if(totalItemInCart < 2){
-            message = totalItemInCart+" item in Cart "+activity.getString(R.string.rs)+""+totalCartAmount;
-        }else{
-            message = totalItemInCart+" items in Cart "+activity.getString(R.string.rs)+""+totalCartAmount;
-        }
+        message = activity.getString(R.string.rs)+""+totalCartAmount;
         return message;
     }
 
