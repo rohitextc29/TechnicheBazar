@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Angoor Jamun"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/removeProductImageView"
+        android:layout_alignStart="@+id/removeProductImageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Set"
+        android:layout_below="@+id/productNameTextView"
+        android:layout_alignLeft="@+id/productNameTextView"
+        android:layout_alignStart="@+id/productNameTextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/productNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/productItemCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/productPriceTextView"
+        android:layout_alignBottom="@+id/productPriceTextView"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/addProductImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/product_add_icon"
+        android:layout_alignBottom="@+id/productPriceTextView"
+        android:layout_toRightOf="@+id/productItemCountTextView"
+        android:layout_toEndOf="@+id/productItemCountTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/custombuttom"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/productNameTextView"
+        android:layout_toEndOf="@+id/productNameTextView" />
+
+    <TextView
+        android:id="@+id/totalProductPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addProductImageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/removeProductImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        app:srcCompat="@drawable/minus_product_icon"
+        android:layout_alignBottom="@+id/productPriceTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

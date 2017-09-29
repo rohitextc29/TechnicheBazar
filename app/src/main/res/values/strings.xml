@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TechnicheBazar</string>
+    <string name="uri">http://35.154.42.68/testing/categories</string>
+    <string name="rs">\u20B9</string>
+</resources>
